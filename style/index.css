@@ -17,6 +17,7 @@
 .head h1 {
   font-size: 2rem;
   color: #3d322c;
+  margin: 0 auto;
 }
 
 .cover {
@@ -46,6 +47,12 @@
   width: 90%;
   margin-top: 2rem;
 }
+.head {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 3rem;
+}
 
 .cover h2 {
   font-size: 4rem;
@@ -53,19 +60,19 @@
   color: #f5d9a8;
 }
 
-.container .space-between li {
+.head .space-between li {
   list-style: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.container .space-between li a {
+.head .space-between li a {
   list-style: none;
   text-decoration: none;
   color: white;
 }
-.container .space-between li a:hover {
+.head .space-between li a:hover {
   color: #9c563d;
 }
-.container .space-between li:hover {
+.head .space-between li:hover {
   list-style: none;
   background-color: #d9b26e;
   opacity: 0.8;
@@ -73,7 +80,7 @@
 
 .space-between {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
@@ -85,6 +92,70 @@
   border-radius: 1rem;
   color: white;
   text-align: center;
+}
+
+.cover3 .img1 {
+  background: url("https://picsum.photos/420/900");
+  min-width: 18%;
+}
+.cover3 .img2 {
+  background: url("https://picsum.photos/420/901");
+  min-width: 18%;
+
+}
+.cover3 .img3 {
+  background: url("https://picsum.photos/421/900");
+  min-width: 18%;
+
+}
+.cover3 .img4 {
+  background: url("https://picsum.photos/419/900");
+  min-width: 18%;
+
+}
+
+@media(max-width:1400px){
+  .head{
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .flex-item{
+    width: 6rem;
+    padding: 0.3rem;
+    margin-right: 1rem;
+  }
+  .cover3 .img1{
+    background: url("https://picsum.photos/421/420");
+    min-width: 18rem;
+    min-height: 20rem;
+    margin-bottom: 1rem;
+  }
+  .cover3 .img2{
+    background: url("https://picsum.photos/420/421");
+    min-width: 18rem;
+    min-height: 20rem;
+    margin-bottom: 1rem;
+
+  }
+  .cover3 .img3{
+    background: url("https://picsum.photos/419/420");
+    min-width: 18rem;
+    min-height: 20rem;
+    margin-bottom: 1rem;
+
+  }
+  .cover3 .img4{
+    background: url("https://picsum.photos/419/421");
+    min-width: 18rem;
+    min-height: 20rem;
+    margin-bottom: 1rem;
+
+  }
+
+  .cover3 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .container h3 {
@@ -116,6 +187,7 @@
 
 
 
+
 .fleximg img {
   min-height: 100%;
   max-width: 20rem;
@@ -137,7 +209,7 @@
     color: #f5d9a8;
 }
 
-footer{
+.footerflex{
     min-height: 3rem;
     background: #d9b26e;
     display: flex;
